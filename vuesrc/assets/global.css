@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* ========= NO SELECT IN KIND WEB ================ */
+    -webkit-user-select: none; /* Chrome、Safari、Opera */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+ */
+    user-select: none;         /* Standard syntax */
+}
+html,body{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+
+:root{
+    --first-color: hsl(230, 75%, 56%);
+    --container-color: hsl(230, 100%, 97%);
+    --title-color: hsl(230, 75%, 15%);
+    --text-color: hsl(230, 12%, 40%);
+    --body-color: hsl(230, 100%, 98%);
+    --border-color: hsl(230, 25%, 80%);
+
+    --body-size: 1.25rem;
+
+    --font-semi-bold: 600;
+    --h2-font-size: 1.25rem;
+
+    --header-height: 3.5rem;
+
+    /* ========= z-index ================= */
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+.mr-5{
+    margin-right: 5px;
+}
+.ml-5{
+    margin-left: 5px;
+}
+.pd-10{
+    padding: 10px 0;
+}
+
