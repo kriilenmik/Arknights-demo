@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=GMT%2b8&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-request-size: 300MB
+      max-file-size: 300MB
+
+  mail:
+    # 发送协议 qq --> smtp // 163 --> smtps
+    protocol: smtps
+    # 配置 SMTP 服务器地址
+    host: smtp.163.com
+    # 发送者邮箱
+    username: abc_ks2733844172@163.com
+    # 配置密码，--> 授权码
+    password: VFTDBXHYMYUJKREX
+    # 端口号 465或 587 --> qq邮箱端口 163 --> 465 // 994
+    port: 465
+    # 默认邮箱编码UTF-8
+    default-encoding: UTF-8
+
+server:
+  port: 9090
+  address: 0.0.0.0
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+    path: F:/compiler/Idea2021/project/vue_spring_project/spring/files/
