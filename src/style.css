@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+.box
+{
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+.box h2
+{
+    position: absolute;
+    top: -40px;
+    font-size: 1.25em;
+    color: #fff;
+    font-weight: 500;
+}
+.box input{
+    position: absolute;
+    inset: 2px;
+    z-index: 10;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+}
+.box .password-strength{
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 17, 17, 0.5);
+}
+.box .password-strength:nth-child(3)
+{
+    filter: blur(5px);
+}
+.box .password-strength:nth-child(4)
+{
+    filter: blur(10px);
+}
+
+          /*AI方法1*/
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: consolas;*/
+/*}*/
+/*body {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    background: #333;*/
+/*}*/
+/*.box {*/
+/*    position: relative;*/
+/*    width: 300px;*/
+/*}*/
+/*.box input {*/
+/*    width: 100%;*/
+/*    font-size: 1em;*/
+/*    border: 2px solid #333; !* 使输入框有明显的边框 *!*/
+/*    outline: none;*/
+/*    padding: 10px 15px;*/
+/*    background: #333;*/
+/*    color: #fff;*/
+/*    border-radius: 5px; !* 可选，为输入框添加圆角 *!*/
+/*}*/
+/*.box input:focus {*/
+/*    border-color: transparent; !* 输入框聚焦时移除边框颜色 *!*/
+/*}*/
+/*.box input:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: -2px; !* 调整以覆盖原有边框 *!*/
+/*    left: -2px;*/
+/*    right: -2px;*/
+/*    bottom: -2px;*/
+/*    background: #111;*/
+/*    z-index: -1;*/
+/*    border-radius: 5px; !* 与输入框圆角大小一致 *!*/
+/*}*/
+
+
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: consolas;*/
+/*}*/
+/*body {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    background: #333;*/
+/*}*/
+/*.box {*/
+/*    position: relative;*/
+/*    width: 300px;*/
+/*}*/
+/*.box input {*/
+/*    width: 100%;*/
+/*    font-size: 1em;*/
+/*    border: 4px solid transparent; !* 增加边框宽度以显示颜色效果 *!*/
+/*    outline: none;*/
+/*    padding: 10px 15px;*/
+/*    background: #333;*/
+/*    color: #fff;*/
+/*    border-radius: 5px; !* 可选，为输入框添加圆角 *!*/
+/*    box-sizing: border-box; !* 确保输入框的尺寸包括了边框 *!*/
+/*}*/
